@@ -10,7 +10,12 @@ public class ToDo {
         if (args.length == 0){
             System.out.println(printUsage());
         } else if (args[0].equals("-l")){
-            listTasks(tasks);
+            if (tasks.length() == 0){
+                System.out.println("No todos for today! :)");
+            } else{
+                listTasks(tasks);
+            }
+
         }
 
     }
