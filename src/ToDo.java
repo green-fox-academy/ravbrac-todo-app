@@ -26,6 +26,10 @@ public class ToDo {
       addNewTask(tasks, args[1]);
     }else if (args[0].equals("-r") && args[1].equals("2") && (numberOfLines(tasks) >= 2)) {
       removeTask2(tasks);
+    }else {
+      System.out.println("Unsupported argument");
+      System.out.println();
+      printUsage();
     }
 
   }
